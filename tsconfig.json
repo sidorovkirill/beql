@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"module": "es6",
+		"target": "es6",
+		"jsx": "preserve",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"types": ["reflect-metadata"],
+        "lib": ["dom", "es2017", "es2015", "es2015.promise"],
+		"paths": {
+			"actions/*": ["client/actions/*"],
+			"api/*": ["client/api/*"],
+			"components/*": ["client/components/*"],
+			"constants/*": ["client/constants/*"],
+			"containers/*": ["client/containers/*"],
+			"core/*": ["client/core/*"],
+			"css/*": ["client/css"],
+			"interfaces/*": ["client/interfaces/*"],
+			"reducers/*": ["client/reducers/*"],
+			"selectors/*": ["client/selectors/*"],
+			"store/*": ["client/store/*"],
+			"utils/*": ["client/utils/*"]
+		}
+	},
+	"include": [
+      "demo/client/main.tsx",
+        "node_modules/web3/index.d.ts",
+        "node_modules/web3/types.d.ts",
+		"declaration.d.ts"
+    ],
+	"exclude": []
+}

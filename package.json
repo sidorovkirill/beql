@@ -1,0 +1,131 @@
+{
+  "name": "beql",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Blockchain events query language",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.develop.config.js --progress --inline --output-pathinfo --colors --content-base demo/public --port 8080 --host 0.0.0.0",
+    "prod": "cross-env NODE_ENV=production webpack --config webpack.production.config.js --progress --profile --colors",
+    "deploy": "live-server --host=10.0.1.193 --port=8090 --mount=/:public --watch=public",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "tslint client/**/*ts{,x}"
+  },
+  "dependencies": {
+    "@types/react-router": "^4.0.21",
+    "@types/react-router-dom": "^4.2.3",
+    "babel-runtime": "^6.26.0",
+    "bignumber.js": "^5.0.0",
+    "bluebird": "^3.5.1",
+    "error-factory": "^0.1.6",
+    "formsy-react": "^1.1.2",
+    "lodash-es": "^4.17.4",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.0.0",
+    "react-image-lightbox": "^4.4.0",
+    "react-intl": "^2.4.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-router-tabs": "^1.0.3",
+    "react-spinkit": "^3.0.0",
+    "reflect-metadata": "^0.1.10",
+    "reselect": "^3.0.1",
+    "sha256": "^0.2.0",
+    "sqlite-parser": "^1.0.1",
+    "string-to-arraybuffer": "^1.0.0",
+    "tslint-loader": "^3.5.3",
+    "uuid": "^3.2.1",
+    "web3": "^1.0.0-beta.26"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bem-cn": "^2.1.1",
+    "@types/lodash-es": "^4.17.0",
+    "@types/node": "^8.5.2",
+    "@types/react": "^16.0.29",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-intl": "^2.3.2",
+    "@types/react-redux": "^5.0.14",
+    "@types/redux": "^3.6.0",
+    "@types/redux-devtools-extension": "^2.13.2",
+    "@types/redux-thunk": "^2.1.0",
+    "autoprefixer-loader": "^3.2.0",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react-intl": "^2.3.1",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.1.1",
+    "enzyme-to-json": "^3.2.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "glob": "^7.1.2",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "live-server": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.19.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/nock"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sidorovkirill/beql.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sidorov Kirill",
+    "email": "ks@mobileup.ru"
+  },
+  "contributors": [
+    {
+      "name": "Sidorov Kirill",
+      "email": "ks@mobileup.ru"
+    },
+    {
+      "name": "Krivonosov Roman",
+      "email": "rk@mobileup.ru"
+    }
+  ],
+  "license": "exclusive"
+}

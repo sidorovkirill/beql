@@ -1,0 +1,495 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "notaries",
+    "outputs": [
+      {
+        "name": "storageId",
+        "type": "uint256"
+      },
+      {
+        "name": "parent",
+        "type": "address"
+      },
+      {
+        "name": "role",
+        "type": "uint8"
+      },
+      {
+        "name": "status",
+        "type": "uint8"
+      },
+      {
+        "name": "approver1",
+        "type": "address"
+      },
+      {
+        "name": "approver2",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_employee",
+        "type": "address"
+      },
+      {
+        "name": "_role",
+        "type": "uint8"
+      },
+      {
+        "name": "_metas",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "updateEmployee",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      }
+    ],
+    "name": "notaryIsNotary",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "revokeNotaryInvite",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      }
+    ],
+    "name": "notaryIsOperator",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      }
+    ],
+    "name": "skipNotaryInviteApprover",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      },
+      {
+        "name": "_directAssignee",
+        "type": "address"
+      }
+    ],
+    "name": "notaryIsAssignee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_storageId",
+        "type": "uint256"
+      }
+    ],
+    "name": "acceptNotaryInvite",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      },
+      {
+        "name": "_metas",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "inviteNotary",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_storageId",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateNotaryInfo",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      }
+    ],
+    "name": "notaryIsManager",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      },
+      {
+        "name": "metas",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "notaryHasPermission",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_notary",
+        "type": "address"
+      }
+    ],
+    "name": "approveNotaryInvite",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "licenseContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_employee",
+        "type": "address"
+      },
+      {
+        "name": "_role",
+        "type": "uint32"
+      },
+      {
+        "name": "_metas",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "inviteEmployee",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "applicationContract",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_applicationContract",
+        "type": "address"
+      },
+      {
+        "name": "_licenseContract",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "notary",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "storageId",
+        "type": "uint256"
+      }
+    ],
+    "name": "NotaryInfoUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "notary",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "role",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "name": "metas",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "NotaryMetaUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "parent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "notary",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "role",
+        "type": "uint8"
+      }
+    ],
+    "name": "NotaryInvited",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "parent",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "notary",
+        "type": "address"
+      }
+    ],
+    "name": "NotaryApproveRequired",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "parent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "role",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "name": "notary",
+        "type": "address"
+      }
+    ],
+    "name": "NotaryInviteAccepted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "parent",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "role",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "name": "notary",
+        "type": "address"
+      }
+    ],
+    "name": "NotaryInviteRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  }
+]

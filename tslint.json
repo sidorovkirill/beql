@@ -1,0 +1,56 @@
+{
+    "defaultSeverity": "error",
+    "env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"tslint:recommended"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"indent": [true, "tabs", 4],
+		"ter-indent": [true, "tab", {
+			"FunctionDeclaration": {
+				"parameters": 2,
+				"body": 2
+			},
+			"FunctionExpression": {
+				"parameters": 2,
+				"body": 2
+			},
+			"MemberExpression": 2
+			}
+		],
+		"linebreak-style": [true, "CR"],
+        "quotemark": [true, "single"],
+        "ordered-imports": false,
+        "no-string-literal": false,
+        "object-literal-sort-keys": false,
+        "no-console": false,
+        "arrow-parens": false,
+        "interface-name": false,
+        "trailing-comma": false,
+        "member-access": false,
+		"no-trailing-whitespace": false,
+		"max-line-length": false,
+		"prefer-for-of": false,
+		"no-shadowed-variable": false,
+		"forin": false,
+		"only-arrow-functions": false,
+		"react/jsx-uses-vars": ["error"],
+		"react/jsx-uses-react": ["error"]
+	},
+    "jsRules": {},
+    "rulesDirectory": []
+}
